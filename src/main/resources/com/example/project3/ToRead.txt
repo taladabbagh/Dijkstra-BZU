@@ -1,0 +1,76 @@
+30 , 45
+Jurasi Molhaq Business , 736 , 187
+Faculty of Business and Economics (BUS) , 676 , 222
+Graduate Studies (GRA) , 640 , 254
+University Clinic , 557 , 298
+Faculty of Science , 425 , 364
+Birzeit University Museum ,  599 , 186
+Main Library , 532 , 230
+Kamal Nasir Auditorium , 469 , 236
+Birzeit university museum, 597 , 187
+Administration Building A, 371 , 256
+Faculty of Engineering, 169 , 292
+General Stores and Workshops, 49 , 345
+Administration Building B 'presidency', 526 , 137
+Law Building, 415 , 174
+AL-Maktoum Biulding, 346, 229
+Bookstore, 349 , 142
+Engineering Workshops, 179 , 248
+Water Reservoir, 499 , 86
+Faculty of Education, 409 , 105
+Faculty of Arts, 305 , 108
+Physical Education Building (Gym), 181 , 135
+Information Technology Center, 428 , 54
+Development Study Center, 363 , 66
+Institute of Women's Studies, 329 , 81
+Faculty of Information Technology, 411 , 27
+Media Development Center, 336 , 54
+Naseeb Shaheen Auditorium, 303 , 30
+Faculty of Nursing Pharmacy and Health Profession, 221 , 65
+Palestinian Heritage Museum, 227 , 24
+Faculty of Arts Design and Music, 139 , 96
+Jurasi Molhaq Business , Faculty of Business and Economics (BUS) , 69
+Jurasi Molhaq Business , Birzeit university museum , 139
+Faculty of Business and Economics (BUS) , Birzeit university museum, 83
+Faculty of Business and Economics (BUS) , Graduate Studies (GRA) , 56
+Graduate Studies (GRA), Main Library , 73
+Graduate Studies (GRA), University Clinic , 64
+Graduate Studies (GRA), Birzeit University Museum , 59
+University Clinic, Main Library , 42
+University Clinic, Faculty of Science , 138
+Birzeit University Museum, Main Library , 73
+Faculty of Science, Kamal Nasir Auditorium , 67
+Faculty of Science, Administration Building A , 68
+Faculty of Science, General Stores and Workshops , 167
+General Stores and Workshops, Faculty of Engineering , 150
+General Stores and Workshops, Faculty of Arts Design and Music , 266
+Faculty of Engineering, Administration Building A , 185
+Faculty of Engineering, Engineering Workshops , 14
+Administration Building A, Kamal Nasir Auditorium , 101
+Administration Building A, AL-Maktoum Biulding , 82
+Kamal Nasir Auditorium, Main Library , 61
+Kamal Nasir Auditorium, Law Building , 52
+Main Library, Law Building , 98
+AL-Maktoum Biulding, Engineering Workshops , 82
+AL-Maktoum Biulding, Law Building , 92
+AL-Maktoum Biulding, Physical Education Building (Gym) , 63
+Law Building, Administration Building B 'presidency' , 114
+Law Building, Bookstore , 60
+Administration Building B 'presidency', Water Reservoir , 77
+Administration Building B 'presidency', Faculty of Education , 119
+Water Reservoir, Faculty of Education , 91
+Faculty of Education, Bookstore , 60
+Faculty of Education, Information Technology Center , 38
+Bookstore, Physical Education Building (Gym) , 185
+Bookstore, Faculty of Arts , 66
+Faculty of Arts, Physical Education Building (Gym) , 241
+Faculty of Arts, Institute of Women's Studies , 38
+Institute of Women's Studies, Development Study Center , 34
+Institute of Women's Studies, Media Development Center , 11
+Development Study Center, Media Development Center , 25
+Development Study Center, Information Technology Center , 72
+Information Technology Center, Faculty of Information Technology , 22
+Faculty of Information Technology, Naseeb Shaheen Auditorium , 112
+Naseeb Shaheen Auditorium, Palestinian Heritage Museum , 82
+Naseeb Shaheen Auditorium, Faculty of Nursing Pharmacy and Health Profession , 65
+Faculty of Nursing Pharmacy and Health Profession, Faculty of Arts Design and Music , 120

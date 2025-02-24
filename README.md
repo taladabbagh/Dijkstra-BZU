@@ -21,7 +21,7 @@ Dijkstra's Algorithm is widely used in applications like network routing, GPS na
 - A **priority queue** to efficiently select the next node with the smallest distance.
 - Visualization of the shortest path from a source node to all other nodes.
 
-This project was written in Java and is designed to be easy to understand and extend.
+This project was written in **Java** and is designed to be easy to understand and extend.
 
 ---
 
@@ -36,17 +36,36 @@ This project was written in Java and is designed to be easy to understand and ex
 
 ## Challenges and Solutions
 
-### Challenge: Efficiently Implementing the Priority Queue
+### Challenge 1: Calculating Distances Using Coordinates from a Picture
 - **Problem**:  
-  Initially, I used a simple list to store and retrieve nodes, which resulted in inefficient performance, especially for large graphs. The time complexity for finding the node with the smallest distance was O(n), making the overall algorithm slow.
+  In this project, I needed to calculate the shortest path between buildings on a university campus. However, I didn’t have access to the exact distances between the buildings. Instead, I had a map image with the buildings marked, and I needed to derive the distances from the coordinates of the buildings on the map.
 
 - **Solution**:  
-  To optimize the algorithm, I implemented a **min-heap** (priority queue) to store nodes. This reduced the time complexity of retrieving the node with the smallest distance to O(log n). Here’s how I addressed the challenge:
-  1. **Researched Heap Data Structures**: I studied how min-heaps work and their advantages over lists.
-  2. **Implemented the Min-Heap**: I wrote a custom min-heap class to manage the nodes efficiently.
-  3. **Integrated the Heap into Dijkstra's Algorithm**: I replaced the list with the min-heap, ensuring the algorithm remained correct while improving performance.
+  To address this challenge, I took the following steps:
+  1. **Extracted Coordinates**: I manually identified the coordinates (x, y) of each building from the map image.
+  2. **Calculated Euclidean Distances**: Using the coordinates, I calculated the Euclidean distance between each pair of buildings using the formula:
+     ```
+     distance = sqrt((x2 - x1)^2 + (y2 - y1)^2)
+     ```
+  3. **Created the Graph**: I used these calculated distances to build a weighted graph, where each building was a node, and the edges represented the distances between them.
+  4. **Validated the Distances**: I cross-checked the calculated distances with known distances (e.g., walking paths) to ensure accuracy.
 
-This optimization made the algorithm scalable and suitable for larger graphs.
+This approach allowed me to create a realistic graph for Dijkstra's Algorithm, even without exact distance data.
+
+---
+
+### Challenge 2: Handling Disconnected Graphs and Unreachable Nodes
+- **Problem**:  
+  During testing, I encountered an issue where the algorithm would fail or produce incorrect results when the graph was disconnected (i.e., some nodes were unreachable from the source node). For example, if the source node was in one isolated subgraph and the target node was in another, the algorithm would not handle this gracefully.
+
+- **Solution**:  
+  To address this issue, I made the following improvements to the algorithm:
+  1. **Initialized Distances to Infinity**: I initialized the distance to all nodes as `Infinity` (or a very large number) to represent unreachable nodes.
+  2. **Checked for Unreachable Nodes**: After running the algorithm, I added a check to identify nodes that remained at `Infinity` distance, indicating they were unreachable from the source.
+  3. **Provided Clear Output**: For unreachable nodes, the program now outputs a clear message (e.g., "Node X is unreachable from the source") instead of returning incorrect or misleading results.
+  4. **Tested Edge Cases**: I tested the algorithm with various disconnected graphs to ensure it handled all cases correctly.
+
+This improvement made the algorithm more robust and user-friendly, ensuring it could handle real-world scenarios where not all nodes are connected.
 
 ---
 
@@ -64,15 +83,14 @@ To run this project locally, follow these steps:
    cd Dijkstra-BZU
    ```
 
-3. **Run the program**:
-   - If written in Python:
+3. **Compile and Run the Program**:
+   - Compile the main Java file:
      ```bash
-     python dijkstra.py
+     javac Main.java
      ```
-   - If written in C++:
+   - Run the program:
      ```bash
-     g++ dijkstra.cpp -o dijkstra
-     ./dijkstra
+     java Main
      ```
 
 ---
@@ -81,14 +99,15 @@ To run this project locally, follow these steps:
 
 1. **Input the Graph**:
    - The program accepts a graph as input. You can either:
-     - Enter the graph manually when prompted.
-     - Provide a file containing the graph data (e.g., adjacency list or matrix).
+     - Enter the graph manually when prompted (e.g., adjacency list or matrix).
+     - Provide a file containing the graph data.
 
 2. **Run the Algorithm**:
    - The program will compute the shortest path from the source node to all other nodes.
 
 3. **View the Output**:
    - The program will display the shortest distances and the paths step-by-step.
+   - If a node is unreachable, the program will explicitly state this.
 
 ---
 

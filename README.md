@@ -21,7 +21,7 @@ Dijkstra's Algorithm is widely used in applications like network routing, GPS na
 - A **priority queue** to efficiently select the next node with the smallest distance.
 - Visualization of the shortest path from a source node to all other nodes.
 
-This project was written in [Python/C++/Java/etc.] and is designed to be easy to understand and extend.
+This project was written in Java and is designed to be easy to understand and extend.
 
 ---
 
